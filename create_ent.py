@@ -27,6 +27,8 @@ print("<?xml version=\"1.0\"?>")
 entities = readCsvToDicts("entities.csv","item")
 keys = readCsvToDicts("keys.csv","name")
 key_texts = readCsvToDicts("key_text.csv","key")
+notes = readCsvToDicts("note.csv","name")
+note_texts = readCsvToDicts("note_text.csv", "key")
 #print(keys)
 
 
@@ -42,6 +44,15 @@ def printKeys(item_name):
                     if (isinstance(fullname, str) and len(fullname)>0):
                         name = fullname
                     print("<"+key_texts[item]["type"]+" key=\""+item+"\" name=\""+name+"\">"+key_texts[item]["text"]+"</"+key_texts[item]["type"]+">")
+                    
+def printNotes(item_name):
+    for item in note_texts:
+        if (item_name in notes.keys()):
+            keyLine = notes[item_name]
+            if (item in keyLine.keys()):
+                hasKey = keyLine[item]
+                if (hasKey):
+                    print(note_texts[item]["text"])
             
 
 print("<classes>")
@@ -71,5 +82,6 @@ for item in entities:
     printKeys(item)
     print("-------- SPAWNFLAGS --------")
     print("-------- NOTES --------")
+    printNotes(item)
     print("  </point>")
 print("</classes>")
