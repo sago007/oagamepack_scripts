@@ -20,13 +20,31 @@ def readCsvToDicts(filename,keyname):
 def fatal(errorMsg):
     print(errorMsg)
     exit(1)
+    
 
 print("<?xml version=\"1.0\"?>")
 
 entities = readCsvToDicts("entities.csv","item")
 keys = readCsvToDicts("keys.csv","name")
+key_texts = readCsvToDicts("key_text.csv","key")
 #print(keys)
 
+
+def printKeys(item_name):
+    for item in key_texts:
+        if (item_name in keys.keys()):
+            keyLine = keys[item_name]
+            if (item in keyLine.keys()):
+                hasKey = keyLine[item]
+                if (hasKey):
+                    print("<"+key_texts[item]["type"]+" key=\""+item+"\"",end="")
+                    name = item
+                    fullname = key_texts[item]["fullname"]
+                    if (isinstance(fullname, str) and len(fullname)>0):
+                        name = fullname
+                    print (" name=\""+name+"\"", end = "");
+                    print(">"+key_texts[item]["text"]+"</"+key_texts[item]["type"]+">")
+            
 
 print("<classes>")
 for item in entities:
@@ -51,5 +69,9 @@ for item in entities:
     print(" model=\""+model+"\">")
     if isinstance(row["description"],str):
         print(row["description"])
+    print("-------- KEYS --------")
+    printKeys(item)
+    print("-------- SPAWNFLAGS --------")
+    print("-------- NOTES --------")
     print("  </point>")
 print("</classes>")
