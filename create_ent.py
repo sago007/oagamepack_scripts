@@ -37,13 +37,11 @@ def printKeys(item_name):
             if (item in keyLine.keys()):
                 hasKey = keyLine[item]
                 if (hasKey):
-                    print("<"+key_texts[item]["type"]+" key=\""+item+"\"",end="")
                     name = item
                     fullname = key_texts[item]["fullname"]
                     if (isinstance(fullname, str) and len(fullname)>0):
                         name = fullname
-                    print (" name=\""+name+"\"", end = "");
-                    print(">"+key_texts[item]["text"]+"</"+key_texts[item]["type"]+">")
+                    print("<"+key_texts[item]["type"]+" key=\""+item+"\" name=\""+name+"\">"+key_texts[item]["text"]+"</"+key_texts[item]["type"]+">")
             
 
 print("<classes>")
