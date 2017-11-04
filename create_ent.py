@@ -67,7 +67,7 @@ for item in entities:
     p = re.compile('\((.+?)\)')
     parans = p.findall(quaked)
     try:
-        color = parans[0] #re.search('\((.+?)\)', quaked).group(1)
+        color = parans[0]
     except AttributeError:
         fatal("Failed it find color in: "+quaked)
     if (len(parans) > 1):
