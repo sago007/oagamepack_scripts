@@ -57,7 +57,8 @@ def printKeys(item_name):
             keyLine = keys[item_name]
             if (item in keyLine.keys()):
                 hasKey = keyLine[item]
-                if (hasKey):
+                #The hasKey == hasKey us used to check for NaN. Blank fields are NaNs in Pandas
+                if (hasKey and hasKey == hasKey):
                     name = item
                     fullname = key_texts[item]["fullname"]
                     if (isinstance(fullname, str) and len(fullname)>0):

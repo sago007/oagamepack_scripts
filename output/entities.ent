@@ -62,6 +62,9 @@
   </point>
   <point name="weapon_grenadelauncher" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/weapons2/grenadel/grenadel.md3">
 -------- KEYS --------
+<integer key="wait" name="Wait time">Seconds before the item respawns. Set to -1 for never respawn.</integer>
+<integer key="random" name="random">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes.</integer>
+<integer key="count" name="count">Quantity of ammo given by the item.</integer>
 -------- SPAWNFLAGS --------
 <flag key="SUSPENDED" name="Do not drop to ground" bit="0">If set, the item will not drop to the ground. Bots will ignore it.</flag>
 -------- NOTES --------
