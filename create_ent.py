@@ -5,8 +5,6 @@ import sys
 import re
 
 def readCsvToDicts(filename,keyname):
-    #reader = csv.DictReader(open(filename,"r").read().replace('\r\n','\n'))
-    #reader = pd.read_csv(filename, sep=',', engine='python')
     reader = pd.read_csv(filename)
     result = {}
     for row in reader.itertuples():
@@ -29,7 +27,8 @@ keys = readCsvToDicts("keys.csv","name")
 key_texts = readCsvToDicts("key_text.csv","key")
 notes = readCsvToDicts("note.csv","name")
 note_texts = readCsvToDicts("note_text.csv", "key")
-#print(keys)
+# There are no spawnflags.csv at the moment. We only have suspended and it is part if the QUAKED line
+spawnflag_texts = readCsvToDicts("spawnflag_text.csv","key")
 
 
 def printKeys(item_name):
@@ -53,6 +52,11 @@ def printNotes(item_name):
                 hasKey = keyLine[item]
                 if (hasKey):
                     print(note_texts[item]["text"])
+                    
+def printSpawnflags(item_name):
+    if ("suspended" in entities[item_name]["quaked"]):
+        flagRow = spawnflag_texts["SUSPENDED"]
+        print("<flag key=\""+flagRow["key"]+"\" name=\""+flagRow["fullname"]+"\" bit=\""+str(flagRow["bit"])+"\">"+flagRow["text"]+"</flag>")
             
 
 print("<classes>")
@@ -81,6 +85,7 @@ for item in entities:
     print("-------- KEYS --------")
     printKeys(item)
     print("-------- SPAWNFLAGS --------")
+    printSpawnflags(item)
     print("-------- NOTES --------")
     printNotes(item)
     print("  </point>")
