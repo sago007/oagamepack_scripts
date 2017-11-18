@@ -59,11 +59,15 @@ def printKeys(item_name):
                 hasKey = keyLine[item]
                 #The hasKey == hasKey us used to check for NaN. Blank fields are NaNs in Pandas
                 if (hasKey and hasKey == hasKey):
-                    name = item
+                    basename = item
+                    basekey = key_texts[item]["basekey"]
+                    if (isinstance(basekey, str) and len(basekey)>0):
+                        basename = basekey
+                    name = basename
                     fullname = key_texts[item]["fullname"]
                     if (isinstance(fullname, str) and len(fullname)>0):
                         name = fullname
-                    print("<"+key_texts[item]["type"]+" key=\""+item+"\" name=\""+name+"\">"+key_texts[item]["text"]+"</"+key_texts[item]["type"]+">")
+                    print("<"+key_texts[item]["type"]+" key=\""+basename+"\" name=\""+name+"\">"+key_texts[item]["text"]+"</"+key_texts[item]["type"]+">")
                     
 def printNotes(item_name):
     for item in note_texts:

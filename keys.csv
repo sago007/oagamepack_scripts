@@ -1,4 +1,5 @@
-name,wait,random,count,team,target,targetname,notbot,notfree,notteam,notsingle,gametype,!gametype
-ammo_belt,true,true,true,true,true,true,true,true,true,true,true,true
-team_CTF_blueflag,false,false,false,false,true,true,false,true,true,true,true,true
-weapon_grenadelauncher,true,true,true,,,,,,,,,
+name,wait,random,count,team,target,targetname,notbot,notfree,notteam,notsingle,gametype,!gametype,empty,wait_path_corner
+ammo_belt,true,true,true,true,true,true,true,true,true,true,true,true,,
+team_CTF_blueflag,false,false,false,false,true,true,false,true,true,true,true,true,,
+weapon_grenadelauncher,true,true,true,,,,,,,,,,,
+path_corner,,,,,,,,,,,,,,true
