@@ -1,60 +1,60 @@
 item,quaked,description,model
-item_armor_shard,/*QUAKED item_armor_shard (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,"",models/powerups/armor/shard.md3
-item_armor_combat,/*QUAKED item_armor_combat (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,"",models/powerups/armor/armor_yel.md3
-item_armor_body,/*QUAKED item_armor_body (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,"",models/powerups/armor/armor_red.md3
-item_health_small,/*QUAKED item_health_small (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,"",models/powerups/health/small_cross.md3
-item_health,/*QUAKED item_health (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,"",models/powerups/health/medium_cross.md3
-item_health_large,/*QUAKED item_health_large (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,"",models/powerups/health/large_cross.md3
-item_health_mega,/*QUAKED item_health_mega (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,"",models/powerups/health/mega_cross.md3
-weapon_gauntlet,/*QUAKED weapon_gauntlet (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,"",models/weapons2/gauntlet/gauntlet.md3
-weapon_shotgun,/*QUAKED weapon_shotgun (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,"",models/weapons2/shotgun/shotgun.md3
-weapon_machinegun,/*QUAKED weapon_machinegun (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,"",models/weapons2/machinegun/machinegun.md3
-weapon_grenadelauncher,/*QUAKED weapon_grenadelauncher (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,"",models/weapons2/grenadel/grenadel.md3
-weapon_rocketlauncher,/*QUAKED weapon_rocketlauncher (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,"",models/weapons2/rocketl/rocketl.md3
-weapon_lightning,/*QUAKED weapon_lightning (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,"",models/weapons2/lightning/lightning.md3
-weapon_railgun,/*QUAKED weapon_railgun (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,"",models/weapons2/railgun/railgun.md3
-weapon_plasmagun,/*QUAKED weapon_plasmagun (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,"",models/weapons2/plasma/plasma.md3
-weapon_bfg,/*QUAKED weapon_bfg (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,"",models/weapons2/bfg/bfg.md3
-weapon_grapplinghook,/*QUAKED weapon_grapplinghook (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,"",models/weapons2/grapple/grapple.md3
-ammo_shells,/*QUAKED ammo_shells (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,"",models/powerups/ammo/shotgunam.md3
-ammo_bullets,/*QUAKED ammo_bullets (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,"",models/powerups/ammo/machinegunam.md3
-ammo_grenades,/*QUAKED ammo_grenades (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,"",models/powerups/ammo/grenadeam.md3
-ammo_cells,/*QUAKED ammo_cells (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,"",models/powerups/ammo/plasmaam.md3
-ammo_lightning,/*QUAKED ammo_lightning (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,"",models/powerups/ammo/lightningam.md3
-ammo_rockets,/*QUAKED ammo_rockets (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,"",models/powerups/ammo/rocketam.md3
-ammo_slugs,/*QUAKED ammo_slugs (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,"",models/powerups/ammo/railgunam.md3
-ammo_bfg,/*QUAKED ammo_bfg (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,"",models/powerups/ammo/bfgam.md3
-holdable_teleporter,/*QUAKED holdable_teleporter (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,"",models/powerups/holdable/teleporter.md3
-holdable_medkit,/*QUAKED holdable_medkit (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,"",models/powerups/holdable/teleporter.md3
-item_quad,/*QUAKED item_quad (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,"",models/powerups/instant/quad.md3
-item_enviro,/*QUAKED item_enviro (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,"",models/powerups/instant/enviro.md3
-item_haste,/*QUAKED item_haste (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,"",models/powerups/instant/haste.md3
-item_invis,/*QUAKED item_invis (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,"",models/powerups/instant/invis.md3
-item_regen,/*QUAKED item_regen (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,"",models/powerups/instant/regen.md3
-item_flight,/*QUAKED item_flight (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,"",models/powerups/instant/flight.md3
-team_CTF_redflag,/*QUAKED team_CTF_redflag (1 0 0) (-16 -16 -16) (16 16 16),"Only in CTF games",models/flags/r_flag.md3
-team_CTF_blueflag,/*QUAKED team_CTF_blueflag (0 0 1) (-16 -16 -16) (16 16 16),"Only in CTF games",models/flags/b_flag.md3
-holdable_kamikaze,/*QUAKED holdable_kamikaze (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,"",models/powerups/kamikazi.md3
-holdable_portal,/*QUAKED holdable_portal (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,"",models/powerups/holdable/porter.md3
-holdable_invulnerability,/*QUAKED holdable_invulnerability (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,"",models/powerups/holdable/invulnerability.md3
-ammo_nails,/*QUAKED ammo_nails (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,"",models/powerups/ammo/nailgunam.md3
-ammo_mines,/*QUAKED ammo_mines (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,"",models/powerups/ammo/proxmineam.md3
-ammo_belt,/*QUAKED ammo_belt (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,"",models/powerups/ammo/chaingunam.md3
-item_scout,/*QUAKED item_scout (.3 .3 1) (-16 -16 -16) (16 16 16) suspended redTeam blueTeam,"",models/powerups/scout.md3
-item_guard,/*QUAKED item_guard (.3 .3 1) (-16 -16 -16) (16 16 16) suspended redTeam blueTeam,"",models/powerups/guard.md3
-item_doubler,/*QUAKED item_doubler (.3 .3 1) (-16 -16 -16) (16 16 16) suspended redTeam blueTeam,"",models/powerups/ammo.md3
-team_CTF_neutralflag,/*QUAKED team_CTF_neutralflag (0 0 1) (-16 -16 -16) (16 16 16),"Only in One Flag CTF games",models/powerups/orb/b_orb.md3
-weapon_nailgun,/*QUAKED weapon_nailgun (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,"",models/weapons/nailgun/nailgun.md3
-weapon_prox_launcher,/*QUAKED weapon_prox_launcher (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,"",models/weapons/proxmine/proxmine.md3
-weapon_chaingun,/*QUAKED weapon_chaingun (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,"",models/flags/b_flag.md3
+item_armor_shard,/*QUAKED item_armor_shard (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,,models/powerups/armor/shard.md3
+item_armor_combat,/*QUAKED item_armor_combat (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,,models/powerups/armor/armor_yel.md3
+item_armor_body,/*QUAKED item_armor_body (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,,models/powerups/armor/armor_red.md3
+item_health_small,/*QUAKED item_health_small (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,,models/powerups/health/small_cross.md3
+item_health,/*QUAKED item_health (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,,models/powerups/health/medium_cross.md3
+item_health_large,/*QUAKED item_health_large (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,,models/powerups/health/large_cross.md3
+item_health_mega,/*QUAKED item_health_mega (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,,models/powerups/health/mega_cross.md3
+weapon_gauntlet,/*QUAKED weapon_gauntlet (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,,models/weapons2/gauntlet/gauntlet.md3
+weapon_shotgun,/*QUAKED weapon_shotgun (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,,models/weapons2/shotgun/shotgun.md3
+weapon_machinegun,/*QUAKED weapon_machinegun (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,,models/weapons2/machinegun/machinegun.md3
+weapon_grenadelauncher,/*QUAKED weapon_grenadelauncher (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,,models/weapons2/grenadel/grenadel.md3
+weapon_rocketlauncher,/*QUAKED weapon_rocketlauncher (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,,models/weapons2/rocketl/rocketl.md3
+weapon_lightning,/*QUAKED weapon_lightning (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,,models/weapons2/lightning/lightning.md3
+weapon_railgun,/*QUAKED weapon_railgun (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,,models/weapons2/railgun/railgun.md3
+weapon_plasmagun,/*QUAKED weapon_plasmagun (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,,models/weapons2/plasma/plasma.md3
+weapon_bfg,/*QUAKED weapon_bfg (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,,models/weapons2/bfg/bfg.md3
+weapon_grapplinghook,/*QUAKED weapon_grapplinghook (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,,models/weapons2/grapple/grapple.md3
+ammo_shells,/*QUAKED ammo_shells (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,,models/powerups/ammo/shotgunam.md3
+ammo_bullets,/*QUAKED ammo_bullets (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,,models/powerups/ammo/machinegunam.md3
+ammo_grenades,/*QUAKED ammo_grenades (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,,models/powerups/ammo/grenadeam.md3
+ammo_cells,/*QUAKED ammo_cells (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,,models/powerups/ammo/plasmaam.md3
+ammo_lightning,/*QUAKED ammo_lightning (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,,models/powerups/ammo/lightningam.md3
+ammo_rockets,/*QUAKED ammo_rockets (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,,models/powerups/ammo/rocketam.md3
+ammo_slugs,/*QUAKED ammo_slugs (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,,models/powerups/ammo/railgunam.md3
+ammo_bfg,/*QUAKED ammo_bfg (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,,models/powerups/ammo/bfgam.md3
+holdable_teleporter,/*QUAKED holdable_teleporter (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,,models/powerups/holdable/teleporter.md3
+holdable_medkit,/*QUAKED holdable_medkit (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,,models/powerups/holdable/teleporter.md3
+item_quad,/*QUAKED item_quad (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,,models/powerups/instant/quad.md3
+item_enviro,/*QUAKED item_enviro (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,,models/powerups/instant/enviro.md3
+item_haste,/*QUAKED item_haste (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,,models/powerups/instant/haste.md3
+item_invis,/*QUAKED item_invis (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,,models/powerups/instant/invis.md3
+item_regen,/*QUAKED item_regen (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,,models/powerups/instant/regen.md3
+item_flight,/*QUAKED item_flight (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,,models/powerups/instant/flight.md3
+team_CTF_redflag,/*QUAKED team_CTF_redflag (1 0 0) (-16 -16 -16) (16 16 16),Only in CTF games,models/flags/r_flag.md3
+team_CTF_blueflag,/*QUAKED team_CTF_blueflag (0 0 1) (-16 -16 -16) (16 16 16),Only in CTF games,models/flags/b_flag.md3
+holdable_kamikaze,/*QUAKED holdable_kamikaze (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,,models/powerups/kamikazi.md3
+holdable_portal,/*QUAKED holdable_portal (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,,models/powerups/holdable/porter.md3
+holdable_invulnerability,/*QUAKED holdable_invulnerability (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,,models/powerups/holdable/invulnerability.md3
+ammo_nails,/*QUAKED ammo_nails (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,,models/powerups/ammo/nailgunam.md3
+ammo_mines,/*QUAKED ammo_mines (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,,models/powerups/ammo/proxmineam.md3
+ammo_belt,/*QUAKED ammo_belt (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,,models/powerups/ammo/chaingunam.md3
+item_scout,/*QUAKED item_scout (.3 .3 1) (-16 -16 -16) (16 16 16) suspended redTeam blueTeam,,models/powerups/scout.md3
+item_guard,/*QUAKED item_guard (.3 .3 1) (-16 -16 -16) (16 16 16) suspended redTeam blueTeam,,models/powerups/guard.md3
+item_doubler,/*QUAKED item_doubler (.3 .3 1) (-16 -16 -16) (16 16 16) suspended redTeam blueTeam,,models/powerups/ammo.md3
+team_CTF_neutralflag,/*QUAKED team_CTF_neutralflag (0 0 1) (-16 -16 -16) (16 16 16),Only in One Flag CTF games,models/powerups/orb/b_orb.md3
+weapon_nailgun,/*QUAKED weapon_nailgun (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,,models/weapons/nailgun/nailgun.md3
+weapon_prox_launcher,/*QUAKED weapon_prox_launcher (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,,models/weapons/proxmine/proxmine.md3
+weapon_chaingun,/*QUAKED weapon_chaingun (.3 .3 1) (-16 -16 -16) (16 16 16) suspended,,models/flags/b_flag.md3
 info_player_deathmatch,/*QUAKED info_player_deathmatch (1 0 1) (-16 -16 -24) (16 16 32) initial,"potential spawning position for deathmatch games.
 The first time a player enters the game, they will be at an 'initial' spot.
 Targets will be fired when someone spawns in on them.
 ""nobots"" will prevent bots from using this spot.
 ""nohumans"" will prevent non-bots from using this spot.",
-info_player_start,/*QUAKED info_player_start (1 0 0) (-16 -16 -24) (16 16 32),"equivelant to info_player_deathmatch",
-info_player_intermission,/*QUAKED info_player_intermission (1 0 1) (-16 -16 -24) (16 16 32),"The intermission will be viewed from this point.  Target an info_notnull for the view direction.",
-func_group,/*QUAKED func_group (0 0 0) ?,"Used to group brushes together just for editor convenience.  They are turned into normal brushes by the utilities.",
+info_player_start,/*QUAKED info_player_start (1 0 0) (-16 -16 -24) (16 16 32),equivelant to info_player_deathmatch,
+info_player_intermission,/*QUAKED info_player_intermission (1 0 1) (-16 -16 -24) (16 16 32),The intermission will be viewed from this point.  Target an info_notnull for the view direction.,
+func_group,/*QUAKED func_group (0 0 0) ?,Used to group brushes together just for editor convenience.  They are turned into normal brushes by the utilities.,
 info_camp,/*QUAKED info_camp (0 0.5 0) (-4 -4 -4) (4 4 4),"Used as a positional target for calculations in the utilities (spotlights, etc), but removed during gameplay.",
 info_null,/*QUAKED info_null (0 0.5 0) (-4 -4 -4) (4 4 4),"Used as a positional target for calculations in the utilities (spotlights, etc), but removed during gameplay.",
 info_notnull,/*QUAKED info_notnull (0 0.5 0) (-4 -4 -4) (4 4 4),"Used as a positional target for in-game calculation, like jumppad targets.
@@ -80,18 +80,7 @@ shooter_grenade,/*QUAKED shooter_grenade (1 0 0) (-16 -16 -16) (16 16 16),"Fires
 ""random"" is the number of degrees of deviance from the taget. (1.0 default)",
 func_door,/*QUAKED func_door (0 .5 .8) ? START_OPEN x CRUSHER,"TOGGLE		wait in both the start and end states for a trigger event.
 START_OPEN	the door to moves to its destination when spawned, and operate in reverse.  It is used to temporarily or permanently close off an area when triggered (not useful for touch or takedamage doors).
-NOMONSTER	monsters will not trigger this door
-
-""model2""	.md3 model to also draw
-""angle""		determines the opening direction
-""targetname"" if set, no touch field will be spawned and a remote button or trigger field activates the door.
-""speed""		movement speed (100 default)
-""wait""		wait before returning (3 default, -1 = never return)
-""lip""		lip remaining at end of move (8 default)
-""dmg""		damage to inflict when blocked (2 default)
-""color""		constantLight color
-""light""		constantLight radius
-""health""	if set, the door must be shot open",
+NOMONSTER	monsters will not trigger this door",
 func_plat,/*QUAKED func_plat (0 .5 .8) ?,"Plats are always drawn in the extended position so they will light correctly.
 
 ""lip""		default 8, protrusion above rest position
@@ -160,7 +149,7 @@ worldspawn,/*QUAKED worldspawn (0 0 0) ?,"Every map should have exactly one worl
 ""music""		music wav file
 ""gravity""	800 is default gravity
 ""message""	Text to print during connection process",
-target_give,/*QUAKED target_give (1 0 0) (-8 -8 -8) (8 8 8),"Gives the activator all the items pointed to.",
+target_give,/*QUAKED target_give (1 0 0) (-8 -8 -8) (8 8 8),Gives the activator all the items pointed to.,
 target_remove_powerups,/*QUAKED target_remove_powerups (1 0 0) (-8 -8 -8) (8 8 8),"takes away all the activators powerups.
 Used to drop flight powerups into death puts.",
 target_delay,/*QUAKED target_delay (1 0 0) (-8 -8 -8) (8 8 8),"""wait"" seconds to pause before firing targets.
@@ -181,11 +170,11 @@ Multiple identical looping sounds will just increase volume without any speed co
 ""wait"" : Seconds between auto triggerings, 0 = don't auto trigger
 ""random""	wait variance, default is 0",
 target_laser,/*QUAKED target_laser (0 .5 .8) (-8 -8 -8) (8 8 8) START_ON,"When triggered, fires a laser.  You can either set a target or a direction.",
-target_teleporter,/*QUAKED target_teleporter (1 0 0) (-8 -8 -8) (8 8 8),"The activator will be teleported away.",
+target_teleporter,/*QUAKED target_teleporter (1 0 0) (-8 -8 -8) (8 8 8),The activator will be teleported away.,
 target_relay,/*QUAKED target_relay (.5 .5 .5) (-8 -8 -8) (8 8 8) RED_ONLY BLUE_ONLY RANDOM,"This doesn't perform any actions except fire its targets.
 The activator can be forced to be from a certain team.
 if RANDOM is checked, only one of the targets will be fired, not all of them",
-target_kill,/*QUAKED target_kill (.5 .5 .5) (-8 -8 -8) (8 8 8),"Kills the activator.",
+target_kill,/*QUAKED target_kill (.5 .5 .5) (-8 -8 -8) (8 8 8),Kills the activator.,
 target_position,/*QUAKED target_position (0 0.5 0) (-4 -4 -4) (4 4 4),"Used as a positional target for in-game calculation, like jumppad targets.",
 target_location,/*QUAKED target_location (0 0.5 0) (-8 -8 -8) (8 8 8),"Set ""message"" to the name of this location.
 Set ""count"" to 0-7 for color.
@@ -193,8 +182,8 @@ Set ""count"" to 0-7 for color.
 
 Closest target_location in sight used for the location, if none
 in site, closest in distance",
-team_CTF_redplayer,/*QUAKED team_CTF_redplayer (1 0 0) (-16 -16 -24) (16 16 32),"Only in CTF games.  Red players spawn here at game start.",
-team_CTF_blueplayer,/*QUAKED team_CTF_blueplayer (0 0 1) (-16 -16 -24) (16 16 32),"Only in CTF games.  Blue players spawn here at game start.",
+team_CTF_redplayer,/*QUAKED team_CTF_redplayer (1 0 0) (-16 -16 -24) (16 16 32),Only in CTF games.  Red players spawn here at game start.,
+team_CTF_blueplayer,/*QUAKED team_CTF_blueplayer (0 0 1) (-16 -16 -24) (16 16 32),Only in CTF games.  Blue players spawn here at game start.,
 team_CTF_redspawn,/*QUAKED team_CTF_redspawn (1 0 0) (-16 -16 -24) (16 16 32),"potential spawning position for red team in CTF games.
 Targets will be fired when someone spawns in on them.",
 team_CTF_bluespawn,/*QUAKED team_CTF_bluespawn (0 0 1) (-16 -16 -24) (16 16 32),"potential spawning position for blue team in CTF games.
@@ -202,19 +191,19 @@ Targets will be fired when someone spawns in on them.",
 info_player_dd,/*QUAKED info_player_dd (1 1 0) (-16 -16 -24) (16 16 32),"Spawn point used in Double Domination if no team specific spawn points exists
 Usually placed in the middle of CTF maps
 See info_player_dd_red and info_player_dd_blue for team specific versions",
-info_player_dd_red,/*QUAKED info_player_dd_red (1 1 0) (-16 -16 -24) (16 16 32),"Spawn point used in Double Domination by the red team",
-info_player_dd_blue,/*QUAKED info_player_dd_blue (1 1 0) (-16 -16 -24) (16 16 32),"Spawn point used in Double Domination by the blue team",
+info_player_dd_red,/*QUAKED info_player_dd_red (1 1 0) (-16 -16 -24) (16 16 32),Spawn point used in Double Domination by the red team,
+info_player_dd_blue,/*QUAKED info_player_dd_blue (1 1 0) (-16 -16 -24) (16 16 32),Spawn point used in Double Domination by the blue team,
 domination_point,/*QUAKED domination_point (1 0 .5) (-16 -16 -16) (16 16 16),"Place to spawn domination points in Standard domination.
 The message-key gives the point a name that is showed while playing (MAX length: 19 chars)",
-team_redobelisk,/*QUAKED team_redobelisk (1 0 0) (-16 -16 0) (16 16 8),"",
-team_blueobelisk,/*QUAKED team_blueobelisk (0 0 1) (-16 -16 0) (16 16 88),"",
-team_neutralobelisk,/*QUAKED team_neutralobelisk (0 0 1) (-16 -16 0) (16 16 88),"",
+team_redobelisk,/*QUAKED team_redobelisk (1 0 0) (-16 -16 0) (16 16 8),,
+team_blueobelisk,/*QUAKED team_blueobelisk (0 0 1) (-16 -16 0) (16 16 88),,
+team_neutralobelisk,/*QUAKED team_neutralobelisk (0 0 1) (-16 -16 0) (16 16 88),,
 trigger_multiple,/*QUAKED trigger_multiple (.5 .5 .5) ?,"""wait"" : Seconds between triggerings, 0.5 default, -1 = one time only.
 ""random""	wait variance, default is 0
 Variable sized repeatable trigger.  Must be targeted at one or more entities.
 so, the basic time between firing is a random time between
 (wait - random) and (wait + random)",
-trigger_always,/*QUAKED trigger_always (.5 .5 .5) (-8 -8 -8) (8 8 8),"This trigger will always fire.  It is activated by the world.",
+trigger_always,/*QUAKED trigger_always (.5 .5 .5) (-8 -8 -8) (8 8 8),This trigger will always fire.  It is activated by the world.,
 trigger_push,/*QUAKED trigger_push (.5 .5 .5) ?,"Must point at a target_position, which will be the apex of the leap.
 This will be client side predicted, unlike target_push",
 target_push,/*QUAKED target_push (.5 .5 .5) (-8 -8 -8) (8 8 8) bouncepad,"Pushes the activator in the direction.of angle, or towards a target apex.

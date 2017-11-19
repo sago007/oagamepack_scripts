@@ -44,18 +44,51 @@
   </point>
   <point name="weapon_gauntlet" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/weapons2/gauntlet/gauntlet.md3">
 -------- KEYS --------
+<integer key="wait" name="Wait time">Seconds before the item respawns. Set to -1 for never respawn.</integer>
+<integer key="random" name="random">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes.</integer>
+<integer key="count" name="count">Quantity of ammo given by the item.</integer>
+<string key="team" name="team">Makes the item spawn randomly with other items with the same "team" value. See Notes.</string>
+<target key="target" name="target">When this item is picked up, it triggers the entity specified here, if set.</target>
+<targetname key="targetname" name="targetname">If used as destination for a target_give, the item can be given to players (e.g. at player spawn time).</targetname>
+<boolean key="notbot" name="notbot">If set to 1, the entity won't attract bots.</boolean>
+<boolean key="notfree" name="notfree">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.).</boolean>
+<boolean key="notteam" name="notteam">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.).</boolean>
+<boolean key="notsingle" name="notsingle">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only.</boolean>
+<string key="gametype" name="gametype">If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.</string>
 -------- SPAWNFLAGS --------
 <flag key="SUSPENDED" name="Do not drop to ground" bit="0">If set, the item will not drop to the ground. Bots will ignore it.</flag>
 -------- NOTES --------
   </point>
   <point name="weapon_shotgun" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/weapons2/shotgun/shotgun.md3">
 -------- KEYS --------
+<integer key="wait" name="Wait time">Seconds before the item respawns. Set to -1 for never respawn.</integer>
+<integer key="random" name="random">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes.</integer>
+<integer key="count" name="count">Quantity of ammo given by the item.</integer>
+<string key="team" name="team">Makes the item spawn randomly with other items with the same "team" value. See Notes.</string>
+<target key="target" name="target">When this item is picked up, it triggers the entity specified here, if set.</target>
+<targetname key="targetname" name="targetname">If used as destination for a target_give, the item can be given to players (e.g. at player spawn time).</targetname>
+<boolean key="notbot" name="notbot">If set to 1, the entity won't attract bots.</boolean>
+<boolean key="notfree" name="notfree">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.).</boolean>
+<boolean key="notteam" name="notteam">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.).</boolean>
+<boolean key="notsingle" name="notsingle">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only.</boolean>
+<string key="gametype" name="gametype">If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.</string>
 -------- SPAWNFLAGS --------
 <flag key="SUSPENDED" name="Do not drop to ground" bit="0">If set, the item will not drop to the ground. Bots will ignore it.</flag>
 -------- NOTES --------
   </point>
   <point name="weapon_machinegun" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/weapons2/machinegun/machinegun.md3">
 -------- KEYS --------
+<integer key="wait" name="Wait time">Seconds before the item respawns. Set to -1 for never respawn.</integer>
+<integer key="random" name="random">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes.</integer>
+<integer key="count" name="count">Quantity of ammo given by the item.</integer>
+<string key="team" name="team">Makes the item spawn randomly with other items with the same "team" value. See Notes.</string>
+<target key="target" name="target">When this item is picked up, it triggers the entity specified here, if set.</target>
+<targetname key="targetname" name="targetname">If used as destination for a target_give, the item can be given to players (e.g. at player spawn time).</targetname>
+<boolean key="notbot" name="notbot">If set to 1, the entity won't attract bots.</boolean>
+<boolean key="notfree" name="notfree">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.).</boolean>
+<boolean key="notteam" name="notteam">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.).</boolean>
+<boolean key="notsingle" name="notsingle">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only.</boolean>
+<string key="gametype" name="gametype">If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.</string>
 -------- SPAWNFLAGS --------
 <flag key="SUSPENDED" name="Do not drop to ground" bit="0">If set, the item will not drop to the ground. Bots will ignore it.</flag>
 -------- NOTES --------
@@ -65,102 +98,266 @@
 <integer key="wait" name="Wait time">Seconds before the item respawns. Set to -1 for never respawn.</integer>
 <integer key="random" name="random">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes.</integer>
 <integer key="count" name="count">Quantity of ammo given by the item.</integer>
+<string key="team" name="team">Makes the item spawn randomly with other items with the same "team" value. See Notes.</string>
+<target key="target" name="target">When this item is picked up, it triggers the entity specified here, if set.</target>
+<targetname key="targetname" name="targetname">If used as destination for a target_give, the item can be given to players (e.g. at player spawn time).</targetname>
+<boolean key="notbot" name="notbot">If set to 1, the entity won't attract bots.</boolean>
+<boolean key="notfree" name="notfree">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.).</boolean>
+<boolean key="notteam" name="notteam">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.).</boolean>
+<boolean key="notsingle" name="notsingle">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only.</boolean>
+<string key="gametype" name="gametype">If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.</string>
 -------- SPAWNFLAGS --------
 <flag key="SUSPENDED" name="Do not drop to ground" bit="0">If set, the item will not drop to the ground. Bots will ignore it.</flag>
 -------- NOTES --------
   </point>
   <point name="weapon_rocketlauncher" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/weapons2/rocketl/rocketl.md3">
 -------- KEYS --------
+<integer key="wait" name="Wait time">Seconds before the item respawns. Set to -1 for never respawn.</integer>
+<integer key="random" name="random">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes.</integer>
+<integer key="count" name="count">Quantity of ammo given by the item.</integer>
+<string key="team" name="team">Makes the item spawn randomly with other items with the same "team" value. See Notes.</string>
+<target key="target" name="target">When this item is picked up, it triggers the entity specified here, if set.</target>
+<targetname key="targetname" name="targetname">If used as destination for a target_give, the item can be given to players (e.g. at player spawn time).</targetname>
+<boolean key="notbot" name="notbot">If set to 1, the entity won't attract bots.</boolean>
+<boolean key="notfree" name="notfree">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.).</boolean>
+<boolean key="notteam" name="notteam">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.).</boolean>
+<boolean key="notsingle" name="notsingle">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only.</boolean>
+<string key="gametype" name="gametype">If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.</string>
 -------- SPAWNFLAGS --------
 <flag key="SUSPENDED" name="Do not drop to ground" bit="0">If set, the item will not drop to the ground. Bots will ignore it.</flag>
 -------- NOTES --------
   </point>
   <point name="weapon_lightning" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/weapons2/lightning/lightning.md3">
 -------- KEYS --------
+<integer key="wait" name="Wait time">Seconds before the item respawns. Set to -1 for never respawn.</integer>
+<integer key="random" name="random">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes.</integer>
+<integer key="count" name="count">Quantity of ammo given by the item.</integer>
+<string key="team" name="team">Makes the item spawn randomly with other items with the same "team" value. See Notes.</string>
+<target key="target" name="target">When this item is picked up, it triggers the entity specified here, if set.</target>
+<targetname key="targetname" name="targetname">If used as destination for a target_give, the item can be given to players (e.g. at player spawn time).</targetname>
+<boolean key="notbot" name="notbot">If set to 1, the entity won't attract bots.</boolean>
+<boolean key="notfree" name="notfree">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.).</boolean>
+<boolean key="notteam" name="notteam">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.).</boolean>
+<boolean key="notsingle" name="notsingle">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only.</boolean>
+<string key="gametype" name="gametype">If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.</string>
 -------- SPAWNFLAGS --------
 <flag key="SUSPENDED" name="Do not drop to ground" bit="0">If set, the item will not drop to the ground. Bots will ignore it.</flag>
 -------- NOTES --------
   </point>
   <point name="weapon_railgun" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/weapons2/railgun/railgun.md3">
 -------- KEYS --------
+<integer key="wait" name="Wait time">Seconds before the item respawns. Set to -1 for never respawn.</integer>
+<integer key="random" name="random">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes.</integer>
+<integer key="count" name="count">Quantity of ammo given by the item.</integer>
+<string key="team" name="team">Makes the item spawn randomly with other items with the same "team" value. See Notes.</string>
+<target key="target" name="target">When this item is picked up, it triggers the entity specified here, if set.</target>
+<targetname key="targetname" name="targetname">If used as destination for a target_give, the item can be given to players (e.g. at player spawn time).</targetname>
+<boolean key="notbot" name="notbot">If set to 1, the entity won't attract bots.</boolean>
+<boolean key="notfree" name="notfree">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.).</boolean>
+<boolean key="notteam" name="notteam">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.).</boolean>
+<boolean key="notsingle" name="notsingle">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only.</boolean>
+<string key="gametype" name="gametype">If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.</string>
 -------- SPAWNFLAGS --------
 <flag key="SUSPENDED" name="Do not drop to ground" bit="0">If set, the item will not drop to the ground. Bots will ignore it.</flag>
 -------- NOTES --------
   </point>
   <point name="weapon_plasmagun" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/weapons2/plasma/plasma.md3">
 -------- KEYS --------
+<integer key="wait" name="Wait time">Seconds before the item respawns. Set to -1 for never respawn.</integer>
+<integer key="random" name="random">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes.</integer>
+<integer key="count" name="count">Quantity of ammo given by the item.</integer>
+<string key="team" name="team">Makes the item spawn randomly with other items with the same "team" value. See Notes.</string>
+<target key="target" name="target">When this item is picked up, it triggers the entity specified here, if set.</target>
+<targetname key="targetname" name="targetname">If used as destination for a target_give, the item can be given to players (e.g. at player spawn time).</targetname>
+<boolean key="notbot" name="notbot">If set to 1, the entity won't attract bots.</boolean>
+<boolean key="notfree" name="notfree">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.).</boolean>
+<boolean key="notteam" name="notteam">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.).</boolean>
+<boolean key="notsingle" name="notsingle">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only.</boolean>
+<string key="gametype" name="gametype">If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.</string>
 -------- SPAWNFLAGS --------
 <flag key="SUSPENDED" name="Do not drop to ground" bit="0">If set, the item will not drop to the ground. Bots will ignore it.</flag>
 -------- NOTES --------
   </point>
   <point name="weapon_bfg" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/weapons2/bfg/bfg.md3">
 -------- KEYS --------
+<integer key="wait" name="Wait time">Seconds before the item respawns. Set to -1 for never respawn.</integer>
+<integer key="random" name="random">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes.</integer>
+<integer key="count" name="count">Quantity of ammo given by the item.</integer>
+<string key="team" name="team">Makes the item spawn randomly with other items with the same "team" value. See Notes.</string>
+<target key="target" name="target">When this item is picked up, it triggers the entity specified here, if set.</target>
+<targetname key="targetname" name="targetname">If used as destination for a target_give, the item can be given to players (e.g. at player spawn time).</targetname>
+<boolean key="notbot" name="notbot">If set to 1, the entity won't attract bots.</boolean>
+<boolean key="notfree" name="notfree">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.).</boolean>
+<boolean key="notteam" name="notteam">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.).</boolean>
+<boolean key="notsingle" name="notsingle">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only.</boolean>
+<string key="gametype" name="gametype">If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.</string>
 -------- SPAWNFLAGS --------
 <flag key="SUSPENDED" name="Do not drop to ground" bit="0">If set, the item will not drop to the ground. Bots will ignore it.</flag>
 -------- NOTES --------
   </point>
   <point name="weapon_grapplinghook" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/weapons2/grapple/grapple.md3">
 -------- KEYS --------
+<integer key="wait" name="Wait time">Seconds before the item respawns. Set to -1 for never respawn.</integer>
+<integer key="random" name="random">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes.</integer>
+<integer key="count" name="count">Quantity of ammo given by the item.</integer>
+<string key="team" name="team">Makes the item spawn randomly with other items with the same "team" value. See Notes.</string>
+<target key="target" name="target">When this item is picked up, it triggers the entity specified here, if set.</target>
+<targetname key="targetname" name="targetname">If used as destination for a target_give, the item can be given to players (e.g. at player spawn time).</targetname>
+<boolean key="notbot" name="notbot">If set to 1, the entity won't attract bots.</boolean>
+<boolean key="notfree" name="notfree">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.).</boolean>
+<boolean key="notteam" name="notteam">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.).</boolean>
+<boolean key="notsingle" name="notsingle">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only.</boolean>
+<string key="gametype" name="gametype">If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.</string>
 -------- SPAWNFLAGS --------
 <flag key="SUSPENDED" name="Do not drop to ground" bit="0">If set, the item will not drop to the ground. Bots will ignore it.</flag>
 -------- NOTES --------
   </point>
   <point name="ammo_shells" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/powerups/ammo/shotgunam.md3">
 -------- KEYS --------
+<integer key="wait" name="Wait time">Seconds before the item respawns. Set to -1 for never respawn.</integer>
+<integer key="random" name="random">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes.</integer>
+<integer key="count" name="count">Quantity of ammo given by the item.</integer>
+<string key="team" name="team">Makes the item spawn randomly with other items with the same "team" value. See Notes.</string>
+<target key="target" name="target">When this item is picked up, it triggers the entity specified here, if set.</target>
+<targetname key="targetname" name="targetname">If used as destination for a target_give, the item can be given to players (e.g. at player spawn time).</targetname>
+<boolean key="notbot" name="notbot">If set to 1, the entity won't attract bots.</boolean>
+<boolean key="notfree" name="notfree">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.).</boolean>
+<boolean key="notteam" name="notteam">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.).</boolean>
+<boolean key="notsingle" name="notsingle">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only.</boolean>
+<string key="gametype" name="gametype">If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.</string>
 -------- SPAWNFLAGS --------
 <flag key="SUSPENDED" name="Do not drop to ground" bit="0">If set, the item will not drop to the ground. Bots will ignore it.</flag>
 -------- NOTES --------
   </point>
   <point name="ammo_bullets" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/powerups/ammo/machinegunam.md3">
 -------- KEYS --------
+<integer key="wait" name="Wait time">Seconds before the item respawns. Set to -1 for never respawn.</integer>
+<integer key="random" name="random">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes.</integer>
+<integer key="count" name="count">Quantity of ammo given by the item.</integer>
+<string key="team" name="team">Makes the item spawn randomly with other items with the same "team" value. See Notes.</string>
+<target key="target" name="target">When this item is picked up, it triggers the entity specified here, if set.</target>
+<targetname key="targetname" name="targetname">If used as destination for a target_give, the item can be given to players (e.g. at player spawn time).</targetname>
+<boolean key="notbot" name="notbot">If set to 1, the entity won't attract bots.</boolean>
+<boolean key="notfree" name="notfree">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.).</boolean>
+<boolean key="notteam" name="notteam">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.).</boolean>
+<boolean key="notsingle" name="notsingle">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only.</boolean>
+<string key="gametype" name="gametype">If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.</string>
 -------- SPAWNFLAGS --------
 <flag key="SUSPENDED" name="Do not drop to ground" bit="0">If set, the item will not drop to the ground. Bots will ignore it.</flag>
 -------- NOTES --------
   </point>
   <point name="ammo_grenades" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/powerups/ammo/grenadeam.md3">
 -------- KEYS --------
+<integer key="wait" name="Wait time">Seconds before the item respawns. Set to -1 for never respawn.</integer>
+<integer key="random" name="random">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes.</integer>
+<integer key="count" name="count">Quantity of ammo given by the item.</integer>
+<string key="team" name="team">Makes the item spawn randomly with other items with the same "team" value. See Notes.</string>
+<target key="target" name="target">When this item is picked up, it triggers the entity specified here, if set.</target>
+<targetname key="targetname" name="targetname">If used as destination for a target_give, the item can be given to players (e.g. at player spawn time).</targetname>
+<boolean key="notbot" name="notbot">If set to 1, the entity won't attract bots.</boolean>
+<boolean key="notfree" name="notfree">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.).</boolean>
+<boolean key="notteam" name="notteam">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.).</boolean>
+<boolean key="notsingle" name="notsingle">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only.</boolean>
+<string key="gametype" name="gametype">If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.</string>
 -------- SPAWNFLAGS --------
 <flag key="SUSPENDED" name="Do not drop to ground" bit="0">If set, the item will not drop to the ground. Bots will ignore it.</flag>
 -------- NOTES --------
   </point>
   <point name="ammo_cells" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/powerups/ammo/plasmaam.md3">
 -------- KEYS --------
+<integer key="wait" name="Wait time">Seconds before the item respawns. Set to -1 for never respawn.</integer>
+<integer key="random" name="random">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes.</integer>
+<integer key="count" name="count">Quantity of ammo given by the item.</integer>
+<string key="team" name="team">Makes the item spawn randomly with other items with the same "team" value. See Notes.</string>
+<target key="target" name="target">When this item is picked up, it triggers the entity specified here, if set.</target>
+<targetname key="targetname" name="targetname">If used as destination for a target_give, the item can be given to players (e.g. at player spawn time).</targetname>
+<boolean key="notbot" name="notbot">If set to 1, the entity won't attract bots.</boolean>
+<boolean key="notfree" name="notfree">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.).</boolean>
+<boolean key="notteam" name="notteam">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.).</boolean>
+<boolean key="notsingle" name="notsingle">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only.</boolean>
+<string key="gametype" name="gametype">If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.</string>
 -------- SPAWNFLAGS --------
 <flag key="SUSPENDED" name="Do not drop to ground" bit="0">If set, the item will not drop to the ground. Bots will ignore it.</flag>
 -------- NOTES --------
   </point>
   <point name="ammo_lightning" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/powerups/ammo/lightningam.md3">
 -------- KEYS --------
+<integer key="wait" name="Wait time">Seconds before the item respawns. Set to -1 for never respawn.</integer>
+<integer key="random" name="random">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes.</integer>
+<integer key="count" name="count">Quantity of ammo given by the item.</integer>
+<string key="team" name="team">Makes the item spawn randomly with other items with the same "team" value. See Notes.</string>
+<target key="target" name="target">When this item is picked up, it triggers the entity specified here, if set.</target>
+<targetname key="targetname" name="targetname">If used as destination for a target_give, the item can be given to players (e.g. at player spawn time).</targetname>
+<boolean key="notbot" name="notbot">If set to 1, the entity won't attract bots.</boolean>
+<boolean key="notfree" name="notfree">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.).</boolean>
+<boolean key="notteam" name="notteam">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.).</boolean>
+<boolean key="notsingle" name="notsingle">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only.</boolean>
+<string key="gametype" name="gametype">If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.</string>
 -------- SPAWNFLAGS --------
 <flag key="SUSPENDED" name="Do not drop to ground" bit="0">If set, the item will not drop to the ground. Bots will ignore it.</flag>
 -------- NOTES --------
   </point>
   <point name="ammo_rockets" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/powerups/ammo/rocketam.md3">
 -------- KEYS --------
+<integer key="wait" name="Wait time">Seconds before the item respawns. Set to -1 for never respawn.</integer>
+<integer key="random" name="random">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes.</integer>
+<integer key="count" name="count">Quantity of ammo given by the item.</integer>
+<string key="team" name="team">Makes the item spawn randomly with other items with the same "team" value. See Notes.</string>
+<target key="target" name="target">When this item is picked up, it triggers the entity specified here, if set.</target>
+<targetname key="targetname" name="targetname">If used as destination for a target_give, the item can be given to players (e.g. at player spawn time).</targetname>
+<boolean key="notbot" name="notbot">If set to 1, the entity won't attract bots.</boolean>
+<boolean key="notfree" name="notfree">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.).</boolean>
+<boolean key="notteam" name="notteam">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.).</boolean>
+<boolean key="notsingle" name="notsingle">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only.</boolean>
+<string key="gametype" name="gametype">If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.</string>
 -------- SPAWNFLAGS --------
 <flag key="SUSPENDED" name="Do not drop to ground" bit="0">If set, the item will not drop to the ground. Bots will ignore it.</flag>
 -------- NOTES --------
   </point>
   <point name="ammo_slugs" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/powerups/ammo/railgunam.md3">
 -------- KEYS --------
+<integer key="wait" name="Wait time">Seconds before the item respawns. Set to -1 for never respawn.</integer>
+<integer key="random" name="random">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes.</integer>
+<integer key="count" name="count">Quantity of ammo given by the item.</integer>
+<string key="team" name="team">Makes the item spawn randomly with other items with the same "team" value. See Notes.</string>
+<target key="target" name="target">When this item is picked up, it triggers the entity specified here, if set.</target>
+<targetname key="targetname" name="targetname">If used as destination for a target_give, the item can be given to players (e.g. at player spawn time).</targetname>
+<boolean key="notbot" name="notbot">If set to 1, the entity won't attract bots.</boolean>
+<boolean key="notfree" name="notfree">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.).</boolean>
+<boolean key="notteam" name="notteam">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.).</boolean>
+<boolean key="notsingle" name="notsingle">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only.</boolean>
+<string key="gametype" name="gametype">If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.</string>
 -------- SPAWNFLAGS --------
 <flag key="SUSPENDED" name="Do not drop to ground" bit="0">If set, the item will not drop to the ground. Bots will ignore it.</flag>
 -------- NOTES --------
   </point>
   <point name="ammo_bfg" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/powerups/ammo/bfgam.md3">
 -------- KEYS --------
+<integer key="wait" name="Wait time">Seconds before the item respawns. Set to -1 for never respawn.</integer>
+<integer key="random" name="random">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes.</integer>
+<integer key="count" name="count">Quantity of ammo given by the item.</integer>
+<string key="team" name="team">Makes the item spawn randomly with other items with the same "team" value. See Notes.</string>
+<target key="target" name="target">When this item is picked up, it triggers the entity specified here, if set.</target>
+<targetname key="targetname" name="targetname">If used as destination for a target_give, the item can be given to players (e.g. at player spawn time).</targetname>
+<boolean key="notbot" name="notbot">If set to 1, the entity won't attract bots.</boolean>
+<boolean key="notfree" name="notfree">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.).</boolean>
+<boolean key="notteam" name="notteam">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.).</boolean>
+<boolean key="notsingle" name="notsingle">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only.</boolean>
+<string key="gametype" name="gametype">If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.</string>
 -------- SPAWNFLAGS --------
 <flag key="SUSPENDED" name="Do not drop to ground" bit="0">If set, the item will not drop to the ground. Bots will ignore it.</flag>
 -------- NOTES --------
   </point>
   <point name="holdable_teleporter" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/powerups/holdable/teleporter.md3">
 -------- KEYS --------
+<string key="gametype" name="gametype">If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.</string>
 -------- SPAWNFLAGS --------
 <flag key="SUSPENDED" name="Do not drop to ground" bit="0">If set, the item will not drop to the ground. Bots will ignore it.</flag>
 -------- NOTES --------
   </point>
   <point name="holdable_medkit" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/powerups/holdable/teleporter.md3">
 -------- KEYS --------
+<string key="gametype" name="gametype">If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.</string>
 -------- SPAWNFLAGS --------
 <flag key="SUSPENDED" name="Do not drop to ground" bit="0">If set, the item will not drop to the ground. Bots will ignore it.</flag>
 -------- NOTES --------
@@ -204,6 +401,12 @@
   <point name="team_CTF_redflag" color="1 0 0" box="-16 -16 -16 16 16 16" model="models/flags/r_flag.md3">
 Only in CTF games
 -------- KEYS --------
+<target key="target" name="target">When this item is picked up, it triggers the entity specified here, if set.</target>
+<targetname key="targetname" name="targetname">If used as destination for a target_give, the item can be given to players (e.g. at player spawn time).</targetname>
+<boolean key="notfree" name="notfree">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.).</boolean>
+<boolean key="notteam" name="notteam">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.).</boolean>
+<boolean key="notsingle" name="notsingle">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only.</boolean>
+<string key="gametype" name="gametype">If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.</string>
 -------- SPAWNFLAGS --------
 -------- NOTES --------
   </point>
@@ -221,30 +424,55 @@ Only in CTF games
   </point>
   <point name="holdable_kamikaze" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/powerups/kamikazi.md3">
 -------- KEYS --------
+<string key="gametype" name="gametype">If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.</string>
 -------- SPAWNFLAGS --------
 <flag key="SUSPENDED" name="Do not drop to ground" bit="0">If set, the item will not drop to the ground. Bots will ignore it.</flag>
 -------- NOTES --------
   </point>
   <point name="holdable_portal" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/powerups/holdable/porter.md3">
 -------- KEYS --------
+<string key="gametype" name="gametype">If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.</string>
 -------- SPAWNFLAGS --------
 <flag key="SUSPENDED" name="Do not drop to ground" bit="0">If set, the item will not drop to the ground. Bots will ignore it.</flag>
 -------- NOTES --------
   </point>
   <point name="holdable_invulnerability" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/powerups/holdable/invulnerability.md3">
 -------- KEYS --------
+<string key="gametype" name="gametype">If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.</string>
 -------- SPAWNFLAGS --------
 <flag key="SUSPENDED" name="Do not drop to ground" bit="0">If set, the item will not drop to the ground. Bots will ignore it.</flag>
 -------- NOTES --------
   </point>
   <point name="ammo_nails" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/powerups/ammo/nailgunam.md3">
 -------- KEYS --------
+<integer key="wait" name="Wait time">Seconds before the item respawns. Set to -1 for never respawn.</integer>
+<integer key="random" name="random">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes.</integer>
+<integer key="count" name="count">Quantity of ammo given by the item.</integer>
+<string key="team" name="team">Makes the item spawn randomly with other items with the same "team" value. See Notes.</string>
+<target key="target" name="target">When this item is picked up, it triggers the entity specified here, if set.</target>
+<targetname key="targetname" name="targetname">If used as destination for a target_give, the item can be given to players (e.g. at player spawn time).</targetname>
+<boolean key="notbot" name="notbot">If set to 1, the entity won't attract bots.</boolean>
+<boolean key="notfree" name="notfree">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.).</boolean>
+<boolean key="notteam" name="notteam">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.).</boolean>
+<boolean key="notsingle" name="notsingle">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only.</boolean>
+<string key="gametype" name="gametype">If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.</string>
 -------- SPAWNFLAGS --------
 <flag key="SUSPENDED" name="Do not drop to ground" bit="0">If set, the item will not drop to the ground. Bots will ignore it.</flag>
 -------- NOTES --------
   </point>
   <point name="ammo_mines" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/powerups/ammo/proxmineam.md3">
 -------- KEYS --------
+<integer key="wait" name="Wait time">Seconds before the item respawns. Set to -1 for never respawn.</integer>
+<integer key="random" name="random">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes.</integer>
+<integer key="count" name="count">Quantity of ammo given by the item.</integer>
+<string key="team" name="team">Makes the item spawn randomly with other items with the same "team" value. See Notes.</string>
+<target key="target" name="target">When this item is picked up, it triggers the entity specified here, if set.</target>
+<targetname key="targetname" name="targetname">If used as destination for a target_give, the item can be given to players (e.g. at player spawn time).</targetname>
+<boolean key="notbot" name="notbot">If set to 1, the entity won't attract bots.</boolean>
+<boolean key="notfree" name="notfree">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.).</boolean>
+<boolean key="notteam" name="notteam">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.).</boolean>
+<boolean key="notsingle" name="notsingle">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only.</boolean>
+<string key="gametype" name="gametype">If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.</string>
 -------- SPAWNFLAGS --------
 <flag key="SUSPENDED" name="Do not drop to ground" bit="0">If set, the item will not drop to the ground. Bots will ignore it.</flag>
 -------- NOTES --------
@@ -292,6 +520,17 @@ Only in One Flag CTF games
   </point>
   <point name="weapon_nailgun" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/weapons/nailgun/nailgun.md3">
 -------- KEYS --------
+<integer key="wait" name="Wait time">Seconds before the item respawns. Set to -1 for never respawn.</integer>
+<integer key="random" name="random">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes.</integer>
+<integer key="count" name="count">Quantity of ammo given by the item.</integer>
+<string key="team" name="team">Makes the item spawn randomly with other items with the same "team" value. See Notes.</string>
+<target key="target" name="target">When this item is picked up, it triggers the entity specified here, if set.</target>
+<targetname key="targetname" name="targetname">If used as destination for a target_give, the item can be given to players (e.g. at player spawn time).</targetname>
+<boolean key="notbot" name="notbot">If set to 1, the entity won't attract bots.</boolean>
+<boolean key="notfree" name="notfree">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.).</boolean>
+<boolean key="notteam" name="notteam">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.).</boolean>
+<boolean key="notsingle" name="notsingle">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only.</boolean>
+<string key="gametype" name="gametype">If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.</string>
 -------- SPAWNFLAGS --------
 <flag key="SUSPENDED" name="Do not drop to ground" bit="0">If set, the item will not drop to the ground. Bots will ignore it.</flag>
 -------- NOTES --------
@@ -299,12 +538,34 @@ This may not work with mods designed for the original Q3A
   </point>
   <point name="weapon_prox_launcher" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/weapons/proxmine/proxmine.md3">
 -------- KEYS --------
+<integer key="wait" name="Wait time">Seconds before the item respawns. Set to -1 for never respawn.</integer>
+<integer key="random" name="random">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes.</integer>
+<integer key="count" name="count">Quantity of ammo given by the item.</integer>
+<string key="team" name="team">Makes the item spawn randomly with other items with the same "team" value. See Notes.</string>
+<target key="target" name="target">When this item is picked up, it triggers the entity specified here, if set.</target>
+<targetname key="targetname" name="targetname">If used as destination for a target_give, the item can be given to players (e.g. at player spawn time).</targetname>
+<boolean key="notbot" name="notbot">If set to 1, the entity won't attract bots.</boolean>
+<boolean key="notfree" name="notfree">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.).</boolean>
+<boolean key="notteam" name="notteam">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.).</boolean>
+<boolean key="notsingle" name="notsingle">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only.</boolean>
+<string key="gametype" name="gametype">If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.</string>
 -------- SPAWNFLAGS --------
 <flag key="SUSPENDED" name="Do not drop to ground" bit="0">If set, the item will not drop to the ground. Bots will ignore it.</flag>
 -------- NOTES --------
   </point>
   <point name="weapon_chaingun" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/flags/b_flag.md3">
 -------- KEYS --------
+<integer key="wait" name="Wait time">Seconds before the item respawns. Set to -1 for never respawn.</integer>
+<integer key="random" name="random">How many seconds the respawn time varies from the Respawn Delay value. Default: 0. See Notes.</integer>
+<integer key="count" name="count">Quantity of ammo given by the item.</integer>
+<string key="team" name="team">Makes the item spawn randomly with other items with the same "team" value. See Notes.</string>
+<target key="target" name="target">When this item is picked up, it triggers the entity specified here, if set.</target>
+<targetname key="targetname" name="targetname">If used as destination for a target_give, the item can be given to players (e.g. at player spawn time).</targetname>
+<boolean key="notbot" name="notbot">If set to 1, the entity won't attract bots.</boolean>
+<boolean key="notfree" name="notfree">If set to 1, prevents the entity from spawning in all non-team-based modes (ffa, single player deathmatch, etc.).</boolean>
+<boolean key="notteam" name="notteam">If set to 1, prevents the entity from spawning in all team-based modes (ctf, 1flag, dom, etc.).</boolean>
+<boolean key="notsingle" name="notsingle">If set to 1, prevents the entity from spawning in Single Player Deathmatch mode (g_gametype 2) only.</boolean>
+<string key="gametype" name="gametype">If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.</string>
 -------- SPAWNFLAGS --------
 <flag key="SUSPENDED" name="Do not drop to ground" bit="0">If set, the item will not drop to the ground. Bots will ignore it.</flag>
 -------- NOTES --------
@@ -419,18 +680,17 @@ Fires at either the target or the current direction.
 TOGGLE		wait in both the start and end states for a trigger event.
 START_OPEN	the door to moves to its destination when spawned, and operate in reverse.  It is used to temporarily or permanently close off an area when triggered (not useful for touch or takedamage doors).
 NOMONSTER	monsters will not trigger this door
-
-"model2"	.md3 model to also draw
-"angle"		determines the opening direction
-"targetname" if set, no touch field will be spawned and a remote button or trigger field activates the door.
-"speed"		movement speed (100 default)
-"wait"		wait before returning (3 default, -1 = never return)
-"lip"		lip remaining at end of move (8 default)
-"dmg"		damage to inflict when blocked (2 default)
-"color"		constantLight color
-"light"		constantLight radius
-"health"	if set, the door must be shot open
 -------- KEYS --------
+<string key="model2" name="model2">.md3 model to also draw</string>
+<real key="angle" name="angle">determines the opening direction</real>
+<targetname key="targetname" name="targetname">if set, no touch field will be spawned and a remote button or trigger field activates the door.</targetname>
+<integer key="speed" name="speed">Movement speed</integer>
+<integer key="wait" name="wait">wait before returning (-1 = never return)</integer>
+<integer key="lip" name="lip">lip remaining at end of move</integer>
+<integer key="dmg" name="dmg">damage to inflict when blocked</integer>
+<color key="color" name="color">Light color</color>
+<real key="light" name="light">Light radius</real>
+<boolean key="health" name="Shoot to open">if set, the door must be shot open</boolean>
 -------- SPAWNFLAGS --------
 -------- NOTES --------
   </point>
@@ -470,6 +730,7 @@ Target: next path corner and other targets to fire
 "speed" speed to move to the next corner
 "wait" seconds to wait before behining move to next corner
 -------- KEYS --------
+<integer key="wait" name="wait">Some special text for wait when applied to path_corner</integer>
 -------- SPAWNFLAGS --------
 -------- NOTES --------
   </point>
@@ -690,6 +951,7 @@ Spawn point used in Double Domination by the blue team
 Place to spawn domination points in Standard domination.
 The message-key gives the point a name that is showed while playing (MAX length: 19 chars)
 -------- KEYS --------
+<string key="gametype" name="gametype">If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.</string>
 -------- SPAWNFLAGS --------
 -------- NOTES --------
   </point>

@@ -12,3 +12,13 @@ notsingle,"If set to 1, prevents the entity from spawning in Single Player Death
 gametype,"If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.",string,,
 !gametype,"Usage is similar to Game Type key, with opposite effect. If set, causes the entity to NOT spawn in the specified gametypes. Not supported in gamecode older than OA 0.8.8: entity will always spawn in old mods for Q3A!",string,,
 wait_path_corner,Some special text for wait when applied to path_corner,integer,,wait
+model2,.md3 model to also draw,string,,
+angle,determines the opening direction,real,,
+targetname_func_door,"if set, no touch field will be spawned and a remote button or trigger field activates the door.",targetname,,targetname
+speed,Movement speed,integer,,
+wait_func_door,wait before returning (-1 = never return),integer,,wait
+lip,lip remaining at end of move,integer,,
+dmg_mover,damage to inflict when blocked,integer,,dmg
+color,Light color,color,,
+light,Light radius,real,,
+health_mover,"if set, the door must be shot open",boolean,Shoot to open,health
