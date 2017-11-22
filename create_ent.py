@@ -23,10 +23,10 @@
 import pandas as pd
 import sys
 import re
+import os.path
 
-def readCsvToDicts(filename,keyname):
+def readCsvToDictsAppend(result,filename,keyname):
     reader = pd.read_csv(filename)
-    result = {}
     for row in reader.itertuples():
         rowDict = row._asdict()
         key = rowDict[keyname]
@@ -34,6 +34,10 @@ def readCsvToDicts(filename,keyname):
             sys.exit("fatal error, the file: "+filename+" has double key: "+key)
         result[key] = rowDict
     return result
+
+def readCsvToDicts(filename,keyname):
+    result = {}
+    return readCsvToDictsAppend(result,filename,keyname)
 
 def fatal(errorMsg):
     print(errorMsg)
@@ -43,6 +47,8 @@ def fatal(errorMsg):
 print("<?xml version=\"1.0\"?>")
 
 entities = readCsvToDicts("entities.csv","item")
+if (os.path.isfile("entities_extra.csv")):
+    entities = readCsvToDictsAppend(entities, "entities_extra.csv", "item")
 keys = readCsvToDicts("keys.csv","name")
 key_texts = readCsvToDicts("key_text.csv","key")
 notes = readCsvToDicts("note.csv","name")
