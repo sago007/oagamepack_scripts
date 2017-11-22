@@ -77,7 +77,10 @@ def printKeys(item_name):
                         name = fullname
                     try:
                         defaultTextActual = keyLine[item+"_default"]
-                        defaultText = " Default: "+str(defaultTextActual)
+                        if key_texts[item]["type"] == "integer":
+                            defaultText = " Default: "+str(int(defaultTextActual))
+                        else:
+                            defaultText = " Default: "+str(defaultTextActual)
                     except:
                         defaultText = ""
                     print("<"+key_texts[item]["type"]+" key=\""+basename+"\" name=\""+name+"\">"+key_texts[item]["text"]+defaultText+"</"+key_texts[item]["type"]+">")
