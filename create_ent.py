@@ -58,6 +58,12 @@ spawnflags = readCsvToDicts("spawnflags.csv","item")
 spawnflag_texts = readCsvToDicts("spawnflag_text.csv","key")
 
 
+def isTrue(some_value):
+    # True is represented by the string "true". Note that pandas uses NaN for blank strings
+    if (isinstance(some_value, str) and len(some_value)>0):
+        return True
+    return False
+
 def printKeys(item_name):
     for item in sorted(key_texts):
         if (item_name in keys.keys()):
@@ -69,7 +75,7 @@ def printKeys(item_name):
                     defaultText = ""
                     basename = item
                     basekey = key_texts[item]["basekey"]
-                    if (isinstance(basekey, str) and len(basekey)>0):
+                    if (isTrue(basekey)):
                         basename = basekey
                     name = basename
                     fullname = key_texts[item]["fullname"]
@@ -123,12 +129,16 @@ for item in sorted(entities):
         color = parans[0]
     except AttributeError:
         fatal("Failed it find color in: "+quaked)
+    box1 = False
     if (len(parans) > 1):
         box1 = parans[1]
     if (len(parans) > 2):
         box2 = parans[2]
     if isinstance(row["model"],str):
         model = row["model"]
+    #isPoint = True
+    #f (isTrue(keys[item]["is_group"])):
+    #    isPoint = False
     print("  <point name=\"" + item + "\" color=\""+color+"\"", end ="")
     if (box1 and box2):
         print(" box=\""+box1+" "+box2+"\"", end = "")
