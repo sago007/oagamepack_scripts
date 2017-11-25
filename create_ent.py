@@ -59,7 +59,7 @@ spawnflag_texts = readCsvToDicts("spawnflag_text.csv","key")
 
 
 def printKeys(item_name):
-    for item in key_texts:
+    for item in sorted(key_texts):
         if (item_name in keys.keys()):
             keyLine = keys[item_name]
             if (item in keyLine.keys()):
@@ -86,7 +86,7 @@ def printKeys(item_name):
                     print("<"+key_texts[item]["type"]+" key=\""+basename+"\" name=\""+name+"\">"+key_texts[item]["text"]+defaultText+"</"+key_texts[item]["type"]+">")
                     
 def printNotes(item_name):
-    for item in note_texts:
+    for item in sorted(note_texts):
         if (item_name in notes.keys()):
             keyLine = notes[item_name]
             if (item in keyLine.keys()):
@@ -95,8 +95,8 @@ def printNotes(item_name):
                     print(note_texts[item]["text"])
                     
 def printNonSuspendedSpawnflags(item_name):
-    for item in spawnflag_texts:
-        if (item_name in spawnflags.keys()):
+    for item in sorted(spawnflag_texts):
+        if (item_name in spawnflags.keys() ):
             keyLine = spawnflags[item_name]
             if (item in keyLine.keys()):
                 hasKey = keyLine[item]
@@ -113,7 +113,7 @@ def printSpawnflags(item_name):
             
 
 print("<classes>")
-for item in entities:
+for item in sorted(entities):
     row = entities[item]
     quaked = row["quaked"]
     model = ""
