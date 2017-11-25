@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <classes>
-  <point name="_decal" color="0 1 0" model="">
+  <group name="_decal" color="0 1 0" model="">
 -------- KEYS --------
 -------- SPAWNFLAGS --------
 -------- NOTES --------
-  </point>
+  </group>
   <point name="_skybox" color=".7 .8 1" box="-4 -4 -4 4 4 4" model="">
 -------- KEYS --------
 -------- SPAWNFLAGS --------
@@ -194,7 +194,7 @@ The message-key gives the point a name that is showed while playing (MAX length:
 -------- SPAWNFLAGS --------
 -------- NOTES --------
   </point>
-  <point name="func_bobbing" color="0 .5 .8" model="">
+  <group name="func_bobbing" color="0 .5 .8" model="">
 Normally bobs on the Z axis
 "model2"	.md3 model to also draw
 "height"	amplitude of bob (32 default)
@@ -206,8 +206,8 @@ Normally bobs on the Z axis
 -------- KEYS --------
 -------- SPAWNFLAGS --------
 -------- NOTES --------
-  </point>
-  <point name="func_button" color="0 .5 .8" model="">
+  </group>
+  <group name="func_button" color="0 .5 .8" model="">
 When a button is touched, it moves some distance in the direction of it's angle, triggers all of it's targets, waits some time, then returns to it's original position where it can be triggered again.
 
 "model2"	.md3 model to also draw
@@ -222,8 +222,8 @@ When a button is touched, it moves some distance in the direction of it's angle,
 -------- KEYS --------
 -------- SPAWNFLAGS --------
 -------- NOTES --------
-  </point>
-  <point name="func_door" color="0 .5 .8" model="">
+  </group>
+  <group name="func_door" color="0 .5 .8" model="">
 TOGGLE		wait in both the start and end states for a trigger event.
 START_OPEN	the door to moves to its destination when spawned, and operate in reverse.  It is used to temporarily or permanently close off an area when triggered (not useful for touch or takedamage doors).
 NOMONSTER	monsters will not trigger this door
@@ -241,14 +241,14 @@ NOMONSTER	monsters will not trigger this door
 -------- SPAWNFLAGS --------
 <flag key="START_OPEN" name="Start open" bit="1">Start in the open position</flag>
 -------- NOTES --------
-  </point>
-  <point name="func_group" color="0 0 0" model="">
+  </group>
+  <group name="func_group" color="0 0 0" model="">
 Used to group brushes together just for editor convenience.  They are turned into normal brushes by the utilities.
 -------- KEYS --------
 -------- SPAWNFLAGS --------
 -------- NOTES --------
-  </point>
-  <point name="func_pendulum" color="0 .5 .8" model="">
+  </group>
+  <group name="func_pendulum" color="0 .5 .8" model="">
 You need to have an origin brush as part of this entity.
 Pendulums always swing north / south on unrotated models.  Add an angles field to the model to allow rotation in other directions.
 Pendulum frequency is a physical constant based on the length of the beam and gravity.
@@ -261,8 +261,8 @@ Pendulum frequency is a physical constant based on the length of the beam and gr
 -------- KEYS --------
 -------- SPAWNFLAGS --------
 -------- NOTES --------
-  </point>
-  <point name="func_plat" color="0 .5 .8" model="">
+  </group>
+  <group name="func_plat" color="0 .5 .8" model="">
 Plats are always drawn in the extended position so they will light correctly.
 
 "lip"		default 8, protrusion above rest position
@@ -275,8 +275,8 @@ Plats are always drawn in the extended position so they will light correctly.
 -------- KEYS --------
 -------- SPAWNFLAGS --------
 -------- NOTES --------
-  </point>
-  <point name="func_rotating" color="0 .5 .8" model="">
+  </group>
+  <group name="func_rotating" color="0 .5 .8" model="">
 You need to have an origin brush as part of this entity.  The center of that brush will be
 the point around which it is rotated. It will rotate around the Z axis by default.  You can
 check either the X_AXIS or Y_AXIS box to change that.
@@ -289,8 +289,8 @@ check either the X_AXIS or Y_AXIS box to change that.
 -------- KEYS --------
 -------- SPAWNFLAGS --------
 -------- NOTES --------
-  </point>
-  <point name="func_static" color="0 .5 .8" model="">
+  </group>
+  <group name="func_static" color="0 .5 .8" model="">
 A bmodel that just sits there, doing nothing.  Can be used for conditional walls and models.
 "model2"	.md3 model to also draw
 "color"		constantLight color
@@ -298,7 +298,7 @@ A bmodel that just sits there, doing nothing.  Can be used for conditional walls
 -------- KEYS --------
 -------- SPAWNFLAGS --------
 -------- NOTES --------
-  </point>
+  </group>
   <point name="func_timer" color="0.3 0.1 0.6" box="-8 -8 -8 8 8 8" model="">
 This should be renamed trigger_timer...
 Repeatedly fires its targets.
@@ -312,7 +312,7 @@ so, the basic time between firing is a random time between
 -------- SPAWNFLAGS --------
 -------- NOTES --------
   </point>
-  <point name="func_train" color="0 .5 .8" model="">
+  <group name="func_train" color="0 .5 .8" model="">
 A train is a mover that moves between path_corner target points.
 Trains MUST HAVE AN ORIGIN BRUSH.
 The train spawns at the first target it is pointing at.
@@ -326,7 +326,7 @@ The train spawns at the first target it is pointing at.
 -------- KEYS --------
 -------- SPAWNFLAGS --------
 -------- NOTES --------
-  </point>
+  </group>
   <point name="holdable_invulnerability" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/powerups/holdable/invulnerability.md3">
 -------- KEYS --------
 <string key="gametype" name="gametype">If set, makes the entity spawn ONLY in the specified gametypes. Separate gametypes with commas. Valid values: ffa, tournament, single, team, ctf, oneflag, obelisk, harvester, elimination, ctfelimination, lms, dd, dom, pos.</string>
@@ -745,7 +745,7 @@ This trigger will always fire.  It is activated by the world.
 -------- SPAWNFLAGS --------
 -------- NOTES --------
   </point>
-  <point name="trigger_hurt" color=".5 .5 .5" model="">
+  <group name="trigger_hurt" color=".5 .5 .5" model="">
 Any entity that touches this will be hurt.
 It does dmg points of damage each server frame
 Targeting the trigger will toggle its on / off state.
@@ -758,8 +758,8 @@ NO_PROTECTION	*nothing* stops the damage
 -------- KEYS --------
 -------- SPAWNFLAGS --------
 -------- NOTES --------
-  </point>
-  <point name="trigger_multiple" color=".5 .5 .5" model="">
+  </group>
+  <group name="trigger_multiple" color=".5 .5 .5" model="">
 "wait" : Seconds between triggerings, 0.5 default, -1 = one time only.
 "random"	wait variance, default is 0
 Variable sized repeatable trigger.  Must be targeted at one or more entities.
@@ -768,15 +768,15 @@ so, the basic time between firing is a random time between
 -------- KEYS --------
 -------- SPAWNFLAGS --------
 -------- NOTES --------
-  </point>
-  <point name="trigger_push" color=".5 .5 .5" model="">
+  </group>
+  <group name="trigger_push" color=".5 .5 .5" model="">
 Must point at a target_position, which will be the apex of the leap.
 This will be client side predicted, unlike target_push
 -------- KEYS --------
 -------- SPAWNFLAGS --------
 -------- NOTES --------
-  </point>
-  <point name="trigger_teleport" color=".5 .5 .5" model="">
+  </group>
+  <group name="trigger_teleport" color=".5 .5 .5" model="">
 Allows client side prediction of teleportation events.
 Must point at a target_position, which will be the teleport destination.
 
@@ -786,7 +786,7 @@ automatically near doors to allow spectators to move through them
 -------- KEYS --------
 -------- SPAWNFLAGS --------
 -------- NOTES --------
-  </point>
+  </group>
   <point name="weapon_bfg" color=".3 .3 1" box="-16 -16 -16 16 16 16" model="models/weapons2/bfg/bfg.md3">
 -------- KEYS --------
 <integer key="count" name="count">Quantity of ammo given by the item.</integer>
@@ -997,7 +997,7 @@ This may not work with mods designed for the original Q3A
 <flag key="SUSPENDED" name="Do not drop to ground" bit="0">If set, the item will not drop to the ground. Bots will ignore it.</flag>
 -------- NOTES --------
   </point>
-  <point name="worldspawn" color="0 0 0" model="">
+  <group name="worldspawn" color="0 0 0" model="">
 Every map should have exactly one worldspawn.
 "music"		music wav file
 "gravity"	800 is default gravity
@@ -1005,5 +1005,5 @@ Every map should have exactly one worldspawn.
 -------- KEYS --------
 -------- SPAWNFLAGS --------
 -------- NOTES --------
-  </point>
+  </group>
 </classes>

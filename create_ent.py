@@ -139,7 +139,10 @@ for item in sorted(entities):
     #isPoint = True
     #f (isTrue(keys[item]["is_group"])):
     #    isPoint = False
-    print("  <point name=\"" + item + "\" color=\""+color+"\"", end ="")
+    xmlName = "point"
+    if not box1:
+        xmlName = "group"
+    print("  <"+xmlName+" name=\"" + item + "\" color=\""+color+"\"", end ="")
     if (box1 and box2):
         print(" box=\""+box1+" "+box2+"\"", end = "")
     print(" model=\""+model+"\">")
@@ -151,5 +154,5 @@ for item in sorted(entities):
     printSpawnflags(item)
     print("-------- NOTES --------")
     printNotes(item)
-    print("  </point>")
+    print("  </"+xmlName+">")
 print("</classes>")
